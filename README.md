@@ -12,6 +12,14 @@ Project implementing two AI models (MobileNet and VisionTransformer) for classif
 - **Automatic documentation** (Swagger UI)
 - **Real-time processing** with timing metrics
 
+## 📸 Examples
+
+![Home](images/home.png)
+
+![MN Detector](images/mn_detection.png)
+
+![VIT Detector](images/vit_detection.png)
+
 ## 🛠️ Technologies Used
 
 ![Python](https://img.shields.io/badge/Python-3.9-blue?logo=python)
@@ -68,7 +76,7 @@ Once the server is running, you can access the following from your browser:
 
 ## 📊 Performance
 
-| Model | Accuracy | Top K Accuracy |
-|-------|----------|----------------|
-| MN    | 80%      | 90%            |
-| ViT   | 84%      | 93%            |
+| Model | Parameters (M) | Accuracy | Top 2 Accuracy | 
+|-------|----------------|----------|----------------|
+| MN    | 5.4            | 80%      | 90%            |
+| ViT   | 86             | 84%      | 93%            |
