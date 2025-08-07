@@ -38,24 +38,66 @@ Project implementing two AI models (MobileNet and VisionTransformer) for classif
 git clone https://github.com/your-username/your-repo.git
 cd your-repo
 ```
-2. Create and activate a virtual environment
-- On Windows
+2. Using pyenv for versioning `Python3.9`
+- On Windows.
+If you don't have python3.9 you can use pyenv. Check this repository: 
+[https://github.com/pyenv-win/pyenv-win](https://github.com/pyenv-win/pyenv-win) 
+Or just download python3.9 from its webpage: [https://www.python.org/downloads](https://www.python.org/downloads).
+Then you must use python3.9 in order to create your environment 
+
+- On Linux/Mac. To install pyenv use:
+  ```bash
+  brew install pyenv
+  ```
+  Then in your terminal write:
+  ```bash
+  nano ~/.zshrc
+  ```
+  Then copy this lines:
+  ```bash
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init --path)"
+  eval "$(pyenv init -)"
+  ```
+  Save and refresh with:
+  ```bash
+  source ~/.zshrc
+  ```
+Then you have to use pyenv
+```bash
+pyenv install 3.9
+```
+Go to your your project route and initialize your python3.9. After closing your terminal, it will return to your original version.
+```bash
+cd your_project_route
+pyenv shell 3.9
+```
+3. Then you can create your virtual environment
+
 ```bash
 python -m venv venv
+```
+On windows
+```bash
 venv\Scripts\activate
 ```
-- On Linux/Mac
+On linux/mac
 ```bash
-python -m venv venv
 source venv/bin/activate
 ```
-3. Install the dependencies
-```bash
-pip install -r requirements.txt
-```
+3. Install the dependencies: You have two requirement files. One for the dependencies that I needed to use only the service and the other one was the one that I used for creating the whole project
+- Small requirements (`Recommended for only API users`)
+  ```bash
+  pip install -r requirements_small.txt
+  ```
+- Whole requirements
+  ```bash
+  pip install -r requirements.txt
+  ```
 4. 🚀 Launch your server
 ```bash
-uvicorn main:app --reload
+uvicorn service.main:app --reload
 ```
 ## 🌐 Access the App
 
