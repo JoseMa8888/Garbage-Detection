@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>VIT Detection</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>VIT Detection</h1>
+        <button class="btn-back" onclick="window.location.href='/'">← Volver</button>
+        
+        <div class="upload-container">
+            <input type="file" id="imageInput" accept="image/*">
+            <button onclick="uploadImage()">Procesar Imagen</button>
+        </div>
+        
+        <div class="result-container">
+            <h2>Resultado:</h2>
+            <div id="result"></div>
+        </div>
+        
+        <div class="image-preview">
+            <img id="preview" src="#" alt="Vista previa" style="display:none; max-width: 500px;">
+        </div>
+    </div>
+    
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
