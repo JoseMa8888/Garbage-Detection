@@ -14,11 +14,14 @@ Project implementing two AI models (MobileNet and VisionTransformer) for classif
 
 ## 📸 Examples
 
-![Home](images/home.png)
+<p align="center">
+  <img src="images/home.png" width="1200" />
+</p>
 
-![MN Detector](images/mn_detection.png)
-
-![VIT Detector](images/vit_detection.png)
+<p align="center" float="left">
+  <img src="images/mn_detection.png" width="500" />
+  <img src="images/vit_detection.png" width="500" />
+</p>
 
 ## 🛠️ Technologies Used
 
